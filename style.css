@@ -6,34 +6,139 @@
     border-color: blue;
 }
 
+/*---------------------Heading------------------------------*/
 #heading {
     grid-column: 2 / 6;
     grid-row: 1 / 2;
     background-color: azure;
 }
 
+/*------------------Dashboard-----------------------------*/
 #dashboard {
     grid-column: 1 / 2;
     grid-row: 1 / 5;
     background-color: blue;
 }
 
-#projects {
-    grid-column: 2 / 4;
-    grid-row: 2 / 5;
-    background-color: gray;
+#dashboard > div {
+    padding-top: 10px;
 }
 
+/*------------------Projects-------------------------*/
+#projects {
+    grid-column: 2 / 5;
+    grid-row: 2 / 5;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#cool_project {
+    background-color: blueviolet;
+    width: 15rem;
+    height: 12rem;
+    padding-right: 5rem;
+
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#less_cool {
+    background-color: bisque;
+    width: 15rem;
+    height: 12rem;
+    padding-right: 5rem;
+
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#impossible {
+    background-color: cadetblue;
+    width: 15rem;
+    height: 12rem;
+    padding-right: 5rem;
+
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#easy_peasy {
+    background-color: chocolate;
+    width: 15rem;
+    height: 12rem;
+    padding-right: 5rem;
+
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#ad {
+    background-color: coral;
+    width: 15rem;
+    height: 12rem;
+    padding-right: 5rem;
+
+    grid-row: 4;
+    grid-column: 1;
+}
+
+#money {
+    background-color: cornflowerblue;
+    width: 15rem;
+    height: 12rem;
+    padding-right: 5rem;
+
+    grid-row: 4;
+    grid-column: 2;
+}
+
+/*------------------------------Announcements------------------------------*/
 #announcement {
     grid-column: 5 / 6;
     grid-row: 2 / 3.5;
     font-size: 0.75rem;
-    background-color: yellow;
+    background-color: lightgray;
+    font-weight: bold;
 }
 
+#announcement p {
+    font-weight: normal;
+}
+
+#maintenance {
+    background-color: lightblue;
+}
+
+#community_share {
+    background-color: blanchedalmond;
+}
+
+#update {
+    background-color: aquamarine;
+}
+
+/*--------------------------------Trending------------------------*/
 #trending {
     grid-column: 5 / 6;
     grid-row: 3.5 / 5;
     font-size: 0.75rem;
     background-color: orange;
+}
+
+#tegan {
+    background-color: violet;
+}
+
+#morgan {
+    background-color: darkkhaki;
+}
+
+#kendall {
+    background-color: fuchsia;
+}
+
+#alex {
+    background-color: lightsalmon;
 }
